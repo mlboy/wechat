@@ -1,3 +1,3 @@
-module github.com/esap/wechat
+module github.com/mlboy/wechat
 
-go 1.12
+go 1.13
