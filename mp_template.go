@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/esap/wechat/util"
+	"github.com/mlboy/wechat/util"
 )
 
 // MPTemplateGetAll 服务号模板消息接口

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/esap/wechat/util"
+	"github.com/mlboy/wechat/util"
 )
 
 // WXAPIOauth2 oauth2鉴权

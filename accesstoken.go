@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/esap/wechat/util"
+	"github.com/mlboy/wechat/util"
 )
 
 // FetchDelay 默认5分钟同步一次
@@ -123,7 +123,7 @@ type JsConfig struct {
 func (s *Server) GetJsConfig(Url string) *JsConfig {
 	jc := &JsConfig{Beta: true, Debug: Debug, AppId: s.AppId}
 	jc.Timestamp = time.Now().Unix()
-	jc.Nonsestr = "esap"
+	jc.Nonsestr = "mlboy"
 	jc.Signature = util.SortSha1(fmt.Sprintf("jsapi_ticket=%v&noncestr=%v&timestamp=%v&url=%v", s.GetTicket(), jc.Nonsestr, jc.Timestamp, Url))
 	// TODO：可加入其他apilist
 	jc.JsApiList = []string{"scanQRCode"}
